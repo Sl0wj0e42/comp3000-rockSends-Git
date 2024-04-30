@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/loactionImage"
+        android:layout_width="136dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/presence_busy" />
+
+    <TextView
+        android:id="@+id/locationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/miscInfo"
+        android:textColor="@color/honnyOrange"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toEndOf="@+id/loactionImage"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/locationPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/miscInfo"
+        android:textColor="@color/honnyOrange"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/loactionImage"
+        app:layout_constraintTop_toBottomOf="@+id/locationName" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="239dp"
+        android:layout_height="165dp"
+        app:layout_constraintStart_toEndOf="@+id/loactionImage"
+        app:layout_constraintTop_toBottomOf="@+id/locationPrice">
+        <TextView
+            android:id="@+id/locationInformation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/miscInfo"
+            android:textColor="@color/honnyOrange"
+            android:textSize="18dp" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

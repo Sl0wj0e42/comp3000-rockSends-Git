@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">rockSends1.1-NoDatabase-MakeingItLookNice</string>
+
+    <string name="rocksends">rockSends</string>
+    <string name="miscInfo">Misc Info</string>
+
+    <string-array name="spinnerRouteInfo"></string-array>
+    <string-array name="spinnerHolder"></string-array>
+</resources>
